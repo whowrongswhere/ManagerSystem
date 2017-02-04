@@ -1,0 +1,71 @@
+.error {
+    margin: 20px;
+    padding: 0;
+    background: #FFF;
+}
+.error .well {
+    margin-top: 20px;
+    padding: 70px 20px 100px;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    background-color: #FFFFFF;
+        border-radius: 0;
+}
+.error .well h1 {
+    font-size: 140px;
+    font-weight: bold;
+    padding: 50px 0;
+    color: #28B779;
+    line-height: 36px;
+}
+.error .well h3 {
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+.error .well .center {
+    text-align: center !important;
+}
+.error .well .center a {
+	text-decoration: none;
+	outline: none;
+	color: #FFFFFF;
+}
+.error .well .center a i {
+	color: #FFFFFF;
+}
+.error .well .center .btn-return, .btn-return:focus {
+    background-color: #a0a0a0 !important;
+    border-color: #a0a0a0;
+    display: inline-block;
+	color: #FFF !important;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25) !important;
+	background-image: none !important;
+	border: 5px solid #FFF;
+	border-radius: 0;
+	box-shadow: none !important;
+	transition: all ease .15s;
+	cursor: pointer;
+	vertical-align: middle;
+	margin: 0;
+	position: relative;
+	padding: 8px 14px;
+}
+
+.error .well .center .btn-index , .btn-index :focus {
+    background-color: #428bca !important;
+    border-color: #428bca;
+    color: #FFF !important;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25) !important;
+	background-image: none !important;
+	border: 5px solid #FFF;
+	border-radius: 0;
+	box-shadow: none !important;
+	transition: all ease .15s;
+	cursor: pointer;
+	vertical-align: middle;
+	margin: 0;
+	position: relative;
+	padding: 8px 14px;
+}

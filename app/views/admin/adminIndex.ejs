@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>后台管理</title>
+   	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <link href="/admin/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	  <link href="/admin/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+	  <link href="/admin/css/style.css" type="text/css" rel="stylesheet" />
+	<!--[if lte IE 9]>
+		<script src="/admin/js/respond.min.js"></script>
+		<script src="/admin/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body class="fixed-sidebar full-height-layout gray-bg index-body">
+	<!--顶部栏 start-->
+	<div class="jmeheader">
+		<div class="hd-lf">
+			后台管理系统
+		</div>
+        <div class="hd-con">
+        	<!--菜单栏收缩按钮 start-->
+        	<a class="navbar-minimalize shrk" href="#">
+        		<i class="icon-th-list"></i>
+        	</a>
+        	<!--菜单栏收缩按钮end-->
+        </div>
+        <div class="hd-rt">
+        	<p class="tip">欢迎进入后台管理系统！2016-06-25&nbsp;星期二</p>
+        </div>
+	</div>
+	<!--顶部栏 end-->
+    <div id="wrapper">
+        <!--左侧导航开始-->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="nav-close">
+            	<i class="icon-remove"></i>
+            </div>
+            <div class="sidebar-collapse">
+            	<!--菜单栏上边 start-->
+                <div class="nav-header">
+                    <div class="dropdown profile-element">
+                        <span>
+                        	<img alt="image" class="img-circle" src="/admin/images/user.png" />
+                        </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle jme-user-top">
+                            <span class="clear">
+                           		<span class="text-muted"><%= username %><b class="caret"></b></span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li>
+                              <a class="J_menuItem" href="/admin/pageRouter/resetPassword">修改密码</a>
+                            </li>
+                            <li>
+                            	<a class="J_menuItem" href="/admin/pageRouter/modifyAvatar">修改头像</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                            	<a href="/admin/users/signout">安全退出</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">菜单</div>
+                </div>
+                <!--菜单栏上边 end-->
+                <ul class="nav" id="side-menu">
+                    <li class="jme-submenu" >
+                    	<a>
+                    		<i class="icon-folder-open icon-size"></i>
+                    		<span class="nav-label">品牌介绍</span>
+                    		<span class="arrow icon-angle-down"></span>
+                    	</a>
+                    	<ul aria-expanded="true" class="nav nav-second-level sub-ul">
+		                    <li class="sub-li">
+		                    	<a class="J_menuItem"  href="/admin/pageRouter/addBand">
+		                    		<i class=" icon-double-angle-right sub-icon-size"></i>
+		                    		<span class="nav-label">新增品牌介绍</span>
+		                    	</a>
+		                    </li>
+                        <li class="sub-li">
+                          <a class="J_menuItem"  href="/admin/pageRouter/brandIntroduction">
+                            <i class=" icon-double-angle-right sub-icon-size"></i>
+                            <span class="nav-label">品牌介绍列表</span>
+                          </a>
+                        </li>
+
+                    	</ul>
+                    </li>
+                    <li class="jme-submenu">
+                    	<a>
+                    		<i class="icon-user icon-size"></i>
+                    		<span class="nav-label">用户管理</span>
+                    		<span class="arrow icon-angle-down"></span>
+                    	</a>
+                    	<ul aria-expanded="true" class="nav nav-second-level sub-ul">
+                    		<li class="sub-li">
+		                    	<a class="J_menuItem"  href="page/6.html" >
+		                    		<i class=" icon-double-angle-right sub-icon-size"></i>
+		                    		<span class="nav-label">用户列表</span>
+		                    	</a>
+		                    </li>
+                    	</ul>
+                    </li>
+                   	<li class="jme-submenu">
+                    	<a>
+                    		<i class="icon-user-md icon-size"></i>
+                    		<span class="nav-label">角色</span>
+                    		<span class="arrow icon-angle-down"></span>
+                    	</a>
+                    	<ul aria-expanded="true" class="nav nav-second-level sub-ul">
+                    		<li class="sub-li">
+		                    	<a class="J_menuItem"  href="page/7.html">
+		                    		<i class=" icon-double-angle-right sub-icon-size"></i>
+		                    		<span class="nav-label">角色列表</span>
+		                    	</a>
+		                    </li>
+                    	</ul>
+                    </li>
+                    <li class="jme-submenu">
+                    	<a>
+                    		<i class="icon-qrcode icon-size"></i>
+                    		<span class="nav-label">公司管理</span>
+                    		<span class="arrow icon-angle-down"></span>
+                    	</a>
+                    	<ul aria-expanded="true" class="nav nav-second-level sub-ul">
+                    		<li class="sub-li">
+		                    	<a class="J_menuItem"  href="page/8.html" >
+		                    		<i class=" icon-double-angle-right sub-icon-size"></i>
+		                    		<span class="nav-label">公司列表1</span>
+		                    	</a>
+		                    </li>
+		                    <li class="sub-li">
+		                    	<a class="J_menuItem"  href="page/21.html" >
+		                    		<i class=" icon-double-angle-right sub-icon-size"></i>
+		                    		<span class="nav-label">公司列表2</span>
+		                    	</a>
+		                    </li>
+		                    <li class="sub-li">
+		                    	<a class="J_menuItem"  href="page/22.html" >
+		                    		<i class=" icon-double-angle-right sub-icon-size"></i>
+		                    		<span class="nav-label">公司列表3</span>
+		                    	</a>
+		                    </li>
+		                    <li class="sub-li">
+		                    	<a class="J_menuItem"  href="page/23.html" >
+		                    		<i class=" icon-double-angle-right sub-icon-size"></i>
+		                    		<span class="nav-label">公司列表4</span>
+		                    	</a>
+		                    </li>
+		                    <li class="sub-li">
+		                    	<a class="J_menuItem"  href="page/24.html" >
+		                    		<i class=" icon-double-angle-right sub-icon-size"></i>
+		                    		<span class="nav-label">公司列表5</span>
+		                    	</a>
+		                    </li>
+                    	</ul>
+                    </li>
+                    <li class="jme-submenu">
+                    	<a>
+                    		<i class="icon-qrcode icon-size"></i>
+                    		<span class="nav-label">部门管理</span>
+                    		<span class="arrow icon-angle-down"></span>
+                    	</a>
+                    	<ul aria-expanded="true" class="nav nav-second-level sub-ul">
+                    		<li class="sub-li">
+		                    	<a class="J_menuItem"  href="page/16.html" >
+		                    		<i class=" icon-double-angle-right sub-icon-size"></i>
+		                    		<span class="nav-label">部门一</span>
+		                    	</a>
+		                    </li>
+		                    <li class="sub-li">
+		                    	<a class="J_menuItem"  href="page/17.html" >
+		                    		<i class=" icon-double-angle-right sub-icon-size"></i>
+		                    		<span class="nav-label">部门二</span>
+		                    	</a>
+		                    </li>
+		                    <li class="sub-li">
+		                    	<a class="J_menuItem"  href="page/18.html" >
+		                    		<i class=" icon-double-angle-right sub-icon-size"></i>
+		                    		<span class="nav-label">部门三</span>
+		                    	</a>
+		                    </li>
+		                    <li class="sub-li">
+		                    	<a class="J_menuItem"  href="page/19.html" >
+		                    		<i class=" icon-double-angle-right sub-icon-size"></i>
+		                    		<span class="nav-label">部门四</span>
+		                    	</a>
+		                    </li>
+		                    <li class="sub-li">
+		                    	<a class="J_menuItem"  href="page/20.html" >
+		                    		<i class=" icon-double-angle-right sub-icon-size"></i>
+		                    		<span class="nav-label">部门五</span>
+		                    	</a>
+		                    </li>
+                    	</ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--左侧导航结束-->
+        <!--右侧部分开始-->
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <!--tab面板部分 start-->
+            <div class="row content-tabs">
+                <button class="roll-nav roll-left J_tabLeft">
+                	<i class="icon-backward"></i>
+                </button>
+                <nav class="page-tabs J_menuTabs">
+                    <div class="page-tabs-content">
+                      <a href="javascript:;" class="active J_menuTab" id="tabsIndex">首页</a>
+                      <!--<a href="javascript:;" class="active J_menuTab" data-id="/admin/pageRouter/content">首页</a>-->
+                    </div>
+                </nav>
+                <button class="roll-nav roll-right J_tabRight">
+                	<i class="icon-forward"></i>
+                </button>
+                <div class="btn-group roll-nav roll-right">
+                    <button class="dropdown J_tabClose"  data-toggle="dropdown">
+                    	关闭操作<span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                        <li class="J_tabShowActive">
+                        	<a>定位当前选项卡</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="J_tabCloseAll">
+                        	<a>关闭全部选项卡</a>
+                        </li>
+                        <li class="J_tabCloseOther">
+                        	<a>关闭其他选项卡</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--tab面板部分end-->
+            <!--面板内容部分 start-->
+            <div class="row J_mainContent" id="content-main">
+                <iframe id="iframe_height" class="J_iframe" allowtransparency="true" name="iframe0" width="100%" height="100%" src="/admin/pageRouter/index" frameborder="0" data-id=""></iframe>
+            </div>
+            <!--面板内容部分 end-->
+        </div>
+        <!--右侧部分结束-->
+    </div>
+    <script src="/admin/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	  <script src="/admin/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+	  <script src="/admin/js/pace.min.js" type="text/javascript"></script>
+	  <script src="/admin/js/jquery.metisMenu.js" type="text/javascript"></script>
+	  <script src="/admin/js/bootstrap.min.js"  type="text/javascript"></script>
+	  <script src="/admin/js/inspinia.js" type="text/javascript"></script>
+	  <script src="/admin/js/menutabs.js" type="text/javascript"></script>
+    <script src="/admin/js/jmeTabpages.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      //点击显示首页
+      $("#tabsIndex").click(function (){
+        $.addTabpages({
+          href: '/admin/pageRouter/index',
+          menuName:'首页'
+        });
+      });
+
+    </script>
+</body>
+</html>

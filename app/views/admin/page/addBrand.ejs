@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>品牌列表</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/admin/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="/admin/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+    <link href="/admin/css/body.css" type="text/css" rel="stylesheet" />
+    <!--[if lte IE 9]>
+    <script src="/admin/js/respond.min.js"></script>
+    <script src="/admin/js/html5shiv.js"></script>
+    <![endif]-->
+	</head>
+	<body>
+
+  <form class="form-horizontal" role="form">
+    <div class="form-group">
+      <label for="inputEmail3" class="col-sm-2 control-label">一级标题</label>
+      <div class="col-sm-10">
+        <input type="text" name="firstTitle" class="form-control" id="firstTitle" placeholder="一级标题">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword3" class="col-sm-2 control-label">二级标题</label>
+      <div class="col-sm-10">
+        <input type="text" name="twoTitle" class="form-control" id="twoTitle" placeholder="二级标题">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword3" class="col-sm-2 control-label">内容</label>
+      <div class="col-sm-10">
+        <textarea class="form-control" name="content" id="content" rows="3"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="button" class="btn btn-primary" id="addBandBtn">提交</button>
+        <button type="reset" class="btn btn-default">重置</button>
+      </div>
+    </div>
+  </form>
+
+  <script src="/admin/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="/admin/js/bootstrap.min.js"  type="text/javascript"></script>
+  <script src="/admin/js/jmeDialog.js"  type="text/javascript"></script>
+  <script type="text/javascript">
+    //修改密码按钮事件，用ajax提交表单
+    $("#addBandBtn").click(function(){
+      $.post("/admin/pageRouter/doAddBand",{
+        "firstTitle" : $("#firstTitle").val(),
+        "twoTitle" : $("#twoTitle").val(),
+        "content" : $("#content").val()
+      },function(result){
+        if(result == "1"){
+          //新增成功
+          $.jmeAlert({
+            msg: '新增品牌介绍成功!!!',
+            status:'success',
+            autoDisappear:true
+          });
+          window.location.reload();
+        }else if(result == "-1"){
+          $.jmeAlert({
+            msg: '新增品牌介绍失败!!!',
+            status:'error',
+            autoDisappear:true
+          });
+        }
+      });
+    });
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/controllers/admin/pageRouter.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/controllers/admin/user.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/controllers/client/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/models/brand.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/models/user.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/admin/page/1.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/admin/sign/login.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/client/footer.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/client/header.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/client/index.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/error/error.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/express.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/admin/css/body.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/client/css/style.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/sign/css/ace.min.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/read.txt" charset="UTF-8" />
+  </component>
+</project>

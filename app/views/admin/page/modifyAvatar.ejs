@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>修改头像</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/admin/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="/admin/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+    <link href="/admin/css/body.css" type="text/css" rel="stylesheet" />
+    <!--[if lte IE 9]>
+    <script src="/admin/js/respond.min.js"></script>
+    <script src="/admin/js/html5shiv.js"></script>
+    <![endif]-->
+	</head>
+	<body>
+    <div class="container">
+      <div class="row col-lg-6">
+        <h1>上传头像</h1>
+        <form action="/admin/pageRouter/doModifyAvatar" method="post"  enctype="multipart/form-data" >
+          <div class="form-group">
+            <label for="username">请改头像</label>
+            <input type="file" class="form-control" id="uploadAvator" name="uploadAvator">
+          </div>
+          <button type="submit" id="uploadAvatorBtn" class="btn btn-default" >上传</button>
+        </form>
+      </div>
+    </div>
+	</body>
+</html>
